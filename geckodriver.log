@@ -229,12 +229,13 @@ JavaScript error: resource://gre/actors/AutoCompleteChild.jsm, line 125: Error: 
 
 console.log: WebExtensions: reset-default-search: starting.
 console.log: WebExtensions: reset-default-search: No addons in our list are installed.
-hnm\\AppData\\Local\\Temp\\rust_mozprofileFoANgT"
-1634673940884	Marionette	INFO	Marionette enabled
-console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\johnm\\AppData\\Local\\Temp\\rust_mozprofileFoANgT\\search.json.mozlz4", (void 0)))
-DevTools listening on ws://localhost:52302/devtools/browser/4b32389d-a3cb-49c1-a2c2-9af698cd3162
-1634673942876	Marionette	INFO	Listening on port 52308
-JavaScript error: resource://services-settings/Attachments.jsm, line 391: TypeError: / is not a valid URL.
+1634674753863	Marionette	INFO	Stopped listening on port 52490
+JavaScript error: resource:///modules/Interactions.jsm, line 201: NS_ERROR_FAILURE: Component returned failure code: 0x80004005 (NS_ERROR_FAILURE) [nsIUserIdleService.removeIdleObserver]
+console.warn: TopSitesFeed: Failed to fetch data from Contile server: NetworkError when attempting to fetch resource.
+
+###!!! [Parent][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+avaScript error: resource://services-settings/Attachments.jsm, line 391: TypeError: / is not a valid URL.
 1634673943291	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
 JavaScript error: resource://gre/actors/AutoCompleteChild.jsm, line 125: Error: Invalid autocomplete selectedIndex
 JavaScript error: https://abs.twimg.com/responsive-web/client-web/main.e5ea4cf5.js, line 1: Error: ApiError: https://twitter.com/i/api/1.1/account/settings.json HTTP-403 codes:[353] trace_ids:[null]
@@ -244,9 +245,9 @@ console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message f
 
 console.log: WebExtensions: reset-default-search: starting.
 console.log: WebExtensions: reset-default-search: No addons in our list are installed.
-hnm\\AppData\\Local\\Temp\\rust_mozprofileTERMa2"
-1634674024650	Marionette	INFO	Marionette enabled
-console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\johnm\\AppData\\Local\\Temp\\rust_mozprofileTERMa2\\search.json.mozlz4", (void 0)))
+1634674753468	Marionette	INFO	Stopped listening on port 52308
+JavaScript error: resource:///modules/Interactions.jsm, line 201: NS_ERROR_FAILURE: Component returned failure code: 0x80004005 (NS_ERROR_FAILURE) [nsIUserIdleService.removeIdleObserver]
+cal\\Temp\\rust_mozprofileTERMa2\\search.json.mozlz4", (void 0)))
 DevTools listening on ws://localhost:61025/devtools/browser/d8f32e0d-de90-47ca-856c-d996c7cba65e
 1634674026632	Marionette	INFO	Listening on port 61030
 JavaScript error: resource://services-settings/Attachments.jsm, line 391: TypeError: / is not a valid URL.
@@ -257,3 +258,9 @@ JavaScript error: resource://gre/actors/AutoCompleteChild.jsm, line 125: Error: 
 
 console.log: WebExtensions: reset-default-search: starting.
 console.log: WebExtensions: reset-default-search: No addons in our list are installed.
+1634674751358	Marionette	INFO	Stopped listening on port 61030
+JavaScript error: resource:///modules/Interactions.jsm, line 201: NS_ERROR_FAILURE: Component returned failure code: 0x80004005 (NS_ERROR_FAILURE) [nsIUserIdleService.removeIdleObserver]
+console.warn: TopSitesFeed: Failed to fetch data from Contile server: NetworkError when attempting to fetch resource.
+
+###!!! [Parent][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
