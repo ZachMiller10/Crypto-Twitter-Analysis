@@ -237,8 +237,10 @@ JavaScript error: resource://services-settings/Attachments.jsm, line 391: TypeEr
 JavaScript error: resource://gre/actors/AutoCompleteChild.jsm, line 125: Error: Invalid autocomplete selectedIndex
 JavaScript error: https://abs.twimg.com/responsive-web/client-web/main.e5ea4cf5.js, line 1: Error: ApiError: https://twitter.com/i/api/1.1/account/settings.json HTTP-403 codes:[353] trace_ids:[null]
 console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "https://twitter.com"
-1634674021324	geckodriver	INFO	Listening on 127.0.0.1:61024
-1634674024398	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "61025" "-no-remote" "-profile" "C:\\Users\\johnm\\AppData\\Local\\Temp\\rust_mozprofileTERMa2"
+
+###!!! [Parent][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+ng command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "61025" "-no-remote" "-profile" "C:\\Users\\johnm\\AppData\\Local\\Temp\\rust_mozprofileTERMa2"
 1634674024650	Marionette	INFO	Marionette enabled
 console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\johnm\\AppData\\Local\\Temp\\rust_mozprofileTERMa2\\search.json.mozlz4", (void 0)))
 DevTools listening on ws://localhost:61025/devtools/browser/d8f32e0d-de90-47ca-856c-d996c7cba65e
@@ -246,3 +248,6 @@ DevTools listening on ws://localhost:61025/devtools/browser/d8f32e0d-de90-47ca-8
 JavaScript error: resource://services-settings/Attachments.jsm, line 391: TypeError: / is not a valid URL.
 1634674027069	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
 JavaScript error: resource://gre/actors/AutoCompleteChild.jsm, line 125: Error: Invalid autocomplete selectedIndex
+
+###!!! [Parent][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
