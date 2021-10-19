@@ -27,6 +27,9 @@ search_crypto = driver.find_element_by_xpath('/html/body/div/div/div/div[2]/main
 clear_search = driver.find_element_by_xpath('/html/body/div/div/div/div[2]/main/div/div/div/div[1]/div/div[1]/div[1]/div/div/div/div/div[2]/div[2]/div/div/div/form/div[1]/div/div/label/div[2]/div/input').clear()
 driver.implicitly_wait(10)
 search_data = driver.find_element_by_xpath('/html/body/div/div/div/div[2]/main/div/div/div/div[1]/div/div[1]/div[1]/div/div/div/div/div[2]/div[2]/div/div/div/form/div[1]/div/div/label/div[2]/div/input').send_keys('#crytpocurrency' + Keys.ENTER)
+
+
+
 #######################################################
 
 clear_search = driver.find_element_by_xpath('/html/body/div/div/div/div[2]/main/div/div/div/div[1]/div/div[1]/div[1]/div/div/div/div/div[2]/div[2]/div/div/div/form/div[1]/div/div/label/div[2]/div/input').clear()
