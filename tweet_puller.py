@@ -22,27 +22,39 @@ Password = driver.find_element_by_xpath('/html/body/div/div/div/div[1]/div[2]/di
 
 ###Searching Twitter
 search_crypto = driver.find_element_by_xpath('/html/body/div/div/div/div[2]/main/div/div/div/div[2]/div/div[2]/div/div/div/div[1]/div/div/div/form/div[1]/div/div/label/div[2]/div/input').send_keys('#crypto' + Keys.ENTER)
-#######################################################
 
+#######################################################
+#Search For #crypto
 clear_search = driver.find_element_by_xpath('/html/body/div/div/div/div[2]/main/div/div/div/div[1]/div/div[1]/div[1]/div/div/div/div/div[2]/div[2]/div/div/div/form/div[1]/div/div/label/div[2]/div/input').clear()
 driver.implicitly_wait(10)
 search_data = driver.find_element_by_xpath('/html/body/div/div/div/div[2]/main/div/div/div/div[1]/div/div[1]/div[1]/div/div/div/div/div[2]/div[2]/div/div/div/form/div[1]/div/div/label/div[2]/div/input').send_keys('#crytpocurrency' + Keys.ENTER)
 
+Usernames = driver.find_elements_by_css_selector('div > span.css-901oao')
+
+user1 = Usernames[0].text
 
 
 #######################################################
-
+#Search for Elon Musk
 clear_search = driver.find_element_by_xpath('/html/body/div/div/div/div[2]/main/div/div/div/div[1]/div/div[1]/div[1]/div/div/div/div/div[2]/div[2]/div/div/div/form/div[1]/div/div/label/div[2]/div/input').clear()
 driver.implicitly_wait(10)
 search_data = driver.find_element_by_xpath('/html/body/div/div/div/div[2]/main/div/div/div/div[1]/div/div[1]/div[1]/div/div/div/div/div[2]/div[2]/div/div/div/form/div[1]/div/div/label/div[2]/div/input').send_keys('@elonmusk' + Keys.ENTER)
-#######################################################
 
+
+
+#######################################################
+# Search for @crypto
 clear_search = driver.find_element_by_xpath('/html/body/div/div/div/div[2]/main/div/div/div/div[1]/div/div[1]/div[1]/div/div/div/div/div[2]/div[2]/div/div/div/form/div[1]/div/div/label/div[2]/div/input').clear()
 driver.implicitly_wait(10)
 search_data = driver.find_element_by_xpath('/html/body/div/div/div/div[2]/main/div/div/div/div[1]/div/div[1]/div[1]/div/div/div/div/div[2]/div[2]/div/div/div/form/div[1]/div/div/label/div[2]/div/input').send_keys('@crypto' + Keys.ENTER)
-#######################################################
 
+
+
+#######################################################
+# Search for @cryptocom
 clear_search = driver.find_element_by_xpath('/html/body/div/div/div/div[2]/main/div/div/div/div[1]/div/div[1]/div[1]/div/div/div/div/div[2]/div[2]/div/div/div/form/div[1]/div/div/label/div[2]/div/input').clear()
 driver.implicitly_wait(10)
 search_data = driver.find_element_by_xpath('/html/body/div/div/div/div[2]/main/div/div/div/div[1]/div/div[1]/div[1]/div/div/div/div/div[2]/div[2]/div/div/div/form/div[1]/div/div/label/div[2]/div/input').send_keys('@cryptocom' + Keys.ENTER)
+
+
 #######################################################
