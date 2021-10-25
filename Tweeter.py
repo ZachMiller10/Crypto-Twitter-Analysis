@@ -1,5 +1,6 @@
 #Twitter Crypto Scrape Using Twint
 
+from os import terminal_size
 import twint
 import pandas as pd
 
@@ -7,11 +8,11 @@ import pandas as pd
 ### Crypto Search
 c = twint.Config()
 c.Search = ['#crypto']  #topic
-c.Limit = 10  #number of tweets to scrape
+c.Limit = 1000000  #number of tweets to scrape
 c.Store_csv = True  #store tweets to csv file
 c.Output = "crypto_hashtag_tweets.csv"  #path to csv file
-c.Since = "2018-12-31"
-c.Until = "2021-12-31"
+c.Verified = True
+
 twint.run.Search(c)
 
 
@@ -23,8 +24,7 @@ d.Search = ['#dogecoin']  #topic
 d.Limit = 1000000   #number of tweets to scrape
 d.Store_csv = True  #store tweets to csv file
 d.Output = "dogecoin_hastag_tweets.csv"  #path to csv file
-c.Since = "2018-12-31"
-c.Until = "2021-12-31"
+d.Verified = True
 
 twint.run.Search(d)
 
@@ -37,13 +37,12 @@ b.Search = ['#bitcoin']  #topic
 b.Limit = 1000000   #number of tweets to scrape
 b.Store_csv = True  #store tweets to csv file
 b.Output = "bitcoin_hashtag_tweets.csv"  #path to csv file
-c.Since = "2018-12-31"
-c.Until = "2021-12-31"
+b.Verified = True
 
 twint.run.Search(b)
 
 
-df3 = pd.read_csv('bitcoin_hastag_tweets.csv')
+df3 = pd.read_csv('bitcoin_hashtag_tweets.csv')
 
 ###@elonmusk search
 
@@ -52,8 +51,7 @@ e.Search = ['@elonmusk']  #topic
 e.Limit = 1000000   #number of tweets to scrape
 e.Store_csv = True  #store tweets to csv file
 e.Output = "elon_tweets.csv"  #path to csv file
-c.Since = "2018-12-31"
-c.Until = "2021-12-31"
+e.Verified = True
 
 twint.run.Search(e)
 
@@ -67,8 +65,7 @@ f.Search = ['@cryptocom']  #topic
 f.Limit = 1000000   #number of tweets to scrape
 f.Store_csv = True  #store tweets to csv file
 f.Output = "cryptocom_tweets.csv"  #path to csv file
-c.Since = "2018-12-31"
-c.Until = "2021-12-31"
+f.Verified = True
 
 twint.run.Search(f)
 
