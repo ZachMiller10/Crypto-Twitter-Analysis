@@ -1,0 +1,36 @@
+1638295995944	geckodriver	INFO	Listening on 127.0.0.1:63148
+1638295999017	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "63149" "-no-remote" "-profile" "C:\\Users\\Baylee\\AppData\\Local\\Temp\\rust_mozprofileSDejWN"
+1638295999744	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\Baylee\\AppData\\Local\\Temp\\rust_mozprofileSDejWN\\search.json.mozlz4", (void 0)))
+DevTools listening on ws://localhost:63149/devtools/browser/4101f6f7-9a9d-4a46-bac4-f349eac40cf3
+1638296001734	Marionette	INFO	Listening on port 63155
+1638296002237	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: resource://services-settings/Attachments.jsm, line 391: TypeError: / is not a valid URL.
+JavaScript error: resource://devtools/server/actors/network-monitor/network-event-actor.js, line 109: Error: Got a request https://s2.coinmarketcap.com/_next/static/css/2f17de9992fe70ec3bd4.css without a browsingContextID set
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "https://coinmarketcap.com"
+JavaScript error: resource://devtools/server/actors/network-monitor/network-event-actor.js, line 109: Error: Got a request https://s2.coinmarketcap.com/_next/static/css/2f17de9992fe70ec3bd4.css without a browsingContextID set
+console.error: (new TypeError("currentNode is null", "resource://devtools/client/inspector/shared/style-change-tracker.js", 66))
+TypeError: currentNode is null: canMutationImpactCurrentStyles@resource://devtools/client/inspector/shared/style-change-tracker.js:66:20
+onMutations@resource://devtools/client/inspector/shared/style-change-tracker.js:84:41
+_emit@resource://devtools/shared/event-emitter.js:244:34
+emit@resource://devtools/shared/event-emitter.js:190:18
+emit@resource://devtools/shared/event-emitter.js:342:18
+getMutations@resource://devtools/client/fronts/walker.js:311:10
+
+JavaScript error: resource://gre/modules/XULStore.jsm, line 66: Error: Can't find profile directory.
+JavaScript error: resource://gre/modules/XULStore.jsm, line 66: Error: Can't find profile directory.
+console.log: WebExtensions: reset-default-search: starting.
+console.log: WebExtensions: reset-default-search: No addons in our list are installed.
+JavaScript error: , line 0: NS_ERROR_NOT_AVAILABLE
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "https://coinmarketcap.com"
+console.error: (new TypeError("currentNode is null", "resource://devtools/client/inspector/shared/style-change-tracker.js", 66))
+TypeError: currentNode is null: canMutationImpactCurrentStyles@resource://devtools/client/inspector/shared/style-change-tracker.js:66:20
+onMutations@resource://devtools/client/inspector/shared/style-change-tracker.js:84:41
+_emit@resource://devtools/shared/event-emitter.js:244:34
+emit@resource://devtools/shared/event-emitter.js:190:18
+emit@resource://devtools/shared/event-emitter.js:342:18
+getMutations@resource://devtools/client/fronts/walker.js:311:10
+
+1638297631010	Marionette	INFO	Stopped listening on port 63155
+JavaScript error: resource:///modules/Interactions.jsm, line 201: NS_ERROR_FAILURE: Component returned failure code: 0x80004005 (NS_ERROR_FAILURE) [nsIUserIdleService.removeIdleObserver]
+[Parent 17512, IPC I/O Parent] WARNING: file /builds/worker/checkouts/gecko/ipc/chromium/src/base/process_util_win.cc:167

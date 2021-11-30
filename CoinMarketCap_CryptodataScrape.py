@@ -14,19 +14,21 @@ from selenium.webdriver.common.keys import Keys
 #====== Read in Crypto Currency data =======#
 #  Using the library Selenium to scrape web #
 #############################################
-driver = webdriver.Firefox(executable_path=r'geckodriver.exe')
+driver = webdriver.Firefox(executable_path=r'C:\Users\Baylee\Documents\Applications\geckodriver.exe')
 
 ##Define CoinMarketCap URL
 coinmarket_url = 'https://coinmarketcap.com/'
 driver.get(coinmarket_url)
 
 ##Find Search Bar Element using Selector
-search = driver.find_element_by_css_selector('div.sc-266vnq-1').click() #Open Search Bar
-search_text = driver.find_element_by_css_selector('input.bzyaeu-3')
+search = driver.find_element_by_css_selector('div.sc-1xvlii-0:nth-child(2)>svg:nth-child(1)').click() #Open Search Bar
+search_text = driver.find_element_by_css_selector('.bzyaeu-3')
 search_text.send_keys('Doge' + Keys.ENTER) ##search DogeCoin
 
 ##Find Historical Data Tab & Click
 historic = driver.find_element_by_css_selector('a.x0o17e-0:nth-child(3)').click()
+##Load crypto values until 12/30/2018
+load = driver.find_element_by_css_selector('.b4d71h-0>p:nth-child(3)>button:nth-child(1)').click()
 #===== Scrape Crypto Data Values =====#
 ##Date
 crypto_date_elem = driver.find_elements_by_css_selector('table.h7vnx2-2>tbody>tr>td:nth-child(1)')
@@ -79,12 +81,14 @@ doge.insert(0, 'crypto', 'Dogecoin')
 doge
 ## ======= Repeat for Bitcoin ====== #
 ##Find Search Bar Element using Selector
-search = driver.find_element_by_css_selector('div.sc-266vnq-1').click() #Open Search Bar
-search_text = driver.find_element_by_css_selector('input.bzyaeu-3')
+search = driver.find_element_by_css_selector('div.sc-1xvlii-0:nth-child(2)>svg:nth-child(1)').click() #Open Search Bar
+search_text = driver.find_element_by_css_selector('.bzyaeu-3')
 search_text.send_keys('BTC' + Keys.ENTER) ##search Bitcoin
 
 ##Find Historical Data Tab & Click
 historic = driver.find_element_by_css_selector('a.x0o17e-0:nth-child(3)').click()
+##Load crypto values until 12/30/2018
+load = driver.find_element_by_css_selector('.b4d71h-0>p:nth-child(3)>button:nth-child(1)').click()
 #===== Scrape Crypto Data Values =====#
 ##Date
 crypto_date_elem = driver.find_elements_by_css_selector('table.h7vnx2-2>tbody>tr>td:nth-child(1)')
@@ -143,4 +147,4 @@ crypto_data = pd.concat([doge, bit])
 crypto_data
 
 ##Export to CSV
-crypto_data.to_csv('crypto_data_10.24.csv')
+crypto_data.to_csv('crypto_data_11.30.csv')
